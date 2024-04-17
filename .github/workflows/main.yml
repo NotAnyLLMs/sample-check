@@ -1,0 +1,26 @@
+name: Python Script
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Runs at 00:00 UTC every day
+  workflow_dispatch:  # Manually trigger the workflow
+
+jobs:
+  run_python_script:
+    name: Run Python Script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Specify the Python version you want to use
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt  # Replace with your dependencies if any
+
+      - name: Run Python Script
+        run: python utils.py  # Replace with the path to your Python script
