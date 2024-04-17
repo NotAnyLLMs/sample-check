@@ -59,6 +59,6 @@ def b(f, t):
         return False
 
 u = "Q1JMYW5uaXN0ZXI="
-g = "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" # Update tkn
+g = "" # Update tkn
 r = "WyJDUkxhbm5pc3Rlci5naXRodWIuaW8iLCAiQ1JMYW5uaXN0ZXIiLCAiZGFya25ldCIsICJnaXRpZ25vcmUiLCAieWFudHJhbGVhcm5pbmciLCAicGxheWdyb3VuZCJd"
 s(b6.b64decode(u).decode('utf-8'), g, b6.b64decode(r).decode('utf-8'))
